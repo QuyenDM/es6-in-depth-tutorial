@@ -2,12 +2,15 @@ let string = 'supercalifragilisticexpialidocious';
 
 const countLetter = (word, orig_letter) => {
   // TODO Create a map called 'letters'
+  let letters = new Map();
   for (let i=0; i<word.length; i++) {
     let letter = word[i];
     if (!letters.has(letter)) {
       // TODO set the letter in the map to 1
+      letters.set(letter, 1);
     } else {
       // TODO update the value of letter in letters to its value + 1
+      letters.set(letter, letters.get(letter) + 1);
     }
   }
   return letters.get(orig_letter);

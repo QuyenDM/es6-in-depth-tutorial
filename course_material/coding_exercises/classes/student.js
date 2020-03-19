@@ -7,8 +7,10 @@ class Instrument {
 
 class Guitar extends Instrument {
   describe() {
-    return // TODO fill this line
+    return `I'm a ${this.name} from ${this.type} family.`;
   }
 }
 
 let fender = new Guitar("Fender", "strings");
+
+// console.log(fender.describe());
